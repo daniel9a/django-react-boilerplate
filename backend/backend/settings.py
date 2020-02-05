@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig', # For custom users
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,8 @@ DATABASES = {
     }
 }
 
+# Custom User
+AUTH_USER_MODEL = "users.User"  # new
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
