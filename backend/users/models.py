@@ -9,7 +9,6 @@ from .managers import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin, IndexedTimeStampedModel):
-    date_joined = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
 
     email = models.EmailField(max_length=255, unique=True)
