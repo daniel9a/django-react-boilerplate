@@ -25,6 +25,9 @@ SECRET_KEY = 'z4cm8*r&ic5v607919&j_&av%vo0m@wv61!i0wc8!!re^^9)g&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Admins
+ADMINS = (("Admin", "foo@example.com"),)
+
 ALLOWED_HOSTS = []
 
 
