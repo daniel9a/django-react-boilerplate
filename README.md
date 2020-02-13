@@ -5,7 +5,7 @@ A simple straight forward [django](https://www.djangoproject.com/) boilerplate/t
 - [react](https://reactjs.org/)
 - [redux](https://redux.js.org/)
 
-### Instruction
+### Instructions
 
 Create Virtual Env
 
@@ -21,7 +21,7 @@ source env/bin/activate
 
 To Deactivate
 
-```
+```text
 deactivate
 ```
 
@@ -39,4 +39,17 @@ Install Requirements
 
 ```text
 pip3 install -r requirements.txt
+```
+
+Update DB info in `backend/backend/settings.py` file
+
+
+### Delete Migrations In Case
+
+```text
+find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+```
+
+```text
+find . -path "*/migrations/*.pyc"  -delete
 ```
